@@ -7,10 +7,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.lego.studyjamstask1.MainActivity">
+    tools:context="com.lego.studyjamstask1.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/top_text"
+            android:id="@+id/top_text"
+            android:layout_weight=".01"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:gravity="center_vertical|center|center_horizontal" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageCard"
+            android:src="@drawable/bg"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/bottom_text"
+        android:id="@+id/bottom_text"
+        android:textSize="40sp"
+        android:textColor="@color/redDevilColor"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/devil_image"
+        android:src="@drawable/android_devil"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+
 </RelativeLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Study Jams Task1</string>
+    <string name="top_text">Have a Nice Dive!</string>
+    <string name="bottom_text">Into The Depths of Android!!!</string>
 </resources>
